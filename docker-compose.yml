@@ -168,6 +168,6 @@ services:
     volumes:
         - ./nbs:/home/jovyan/work/nbs
         - ./events:/tmp/spark-events
-    command: bash -c "pip install gdown faiss-cpu && \ gdown -O /home/jovyan/work/nbs/Olympic_Athlete_Biography.csv 1HTp_XX4HnLCevLmjBqIHydZVg-Yx0Dj2 && \ gdown -O /home/jovyan/work/nbs/Olympic_Athlete_Event_Details.csv 1nPaIfIKioxAu4VpxtK-xcxaK9PVrzXdv && \ start-notebook.sh --ip=0.0.0.0 --allow-root --NotebookApp.token=''"
+    command: bash -c "pip install gdown faiss-cpu && gdown -O /home/jovyan/work/nbs/Olympic_Athlete_Biography.csv 1HTp_XX4HnLCevLmjBqIHydZVg-Yx0Dj2 && gdown -O /home/jovyan/work/nbs/Olympic_Athlete_Event_Details.csv 1nPaIfIKioxAu4VpxtK-xcxaK9PVrzXdv && start-notebook.sh --ip=0.0.0.0 --allow-root --NotebookApp.token=''"
 
 
